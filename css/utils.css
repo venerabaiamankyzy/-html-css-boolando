@@ -1,0 +1,30 @@
+/* Utils */
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  color: white;
+}
+
+li {
+  display: inline;
+}
+header footer, footer > div {
+  color: white;
+}

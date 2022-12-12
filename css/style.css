@@ -1,0 +1,162 @@
+/* HEADER */
+li, a {
+  cursor: pointer;
+}
+.header-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #FF6801;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.header-links {
+  flex: 1;
+}
+
+.header-icons {
+  flex: 1;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.header-logo img {
+  height: 1.4rem;
+  vertical-align: middle;
+}
+
+.header-nav ul li {
+  margin: 0 5px;
+}
+
+.header-nav ul li a:hover {
+  background-color: white;
+  color: #1A1A1A;
+  padding: 3px 0;
+}
+
+/*MAIN */
+
+main {
+  margin: 100px 0 50px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .row > div {
+  width: calc(100%/3);
+  padding: 15px 10px;
+}
+
+.col {
+  position: relative;
+}
+
+.favorite-container {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  padding: 5px 13px;
+  margin: 10px;
+  background-color: white;
+  font-size: 2rem;
+  cursor: pointer;
+} 
+
+.favorite-container:hover {
+  color: red;
+}
+
+.tags-container {
+  position: relative;
+}
+
+.tags-container > .sale{
+  position: absolute;
+  bottom: 50px;
+  left: 0px;
+  background-color: red;
+  color: white;
+  padding: 3px 6px;
+  font-size: .8rem;
+}
+
+.tags-container > .discount{
+  position: absolute;
+  bottom: 50px;
+  left: 12%;
+  background-color: green;
+  color: white;
+  font-size: .8rem;
+  padding: 3px 6px;
+}
+
+.tags-container > .solo {
+  left: 0px;
+}
+
+.col img.img-sec {
+  display: none;
+}
+
+.col:hover img.img-main {
+  display: none;
+}
+
+.col:hover img.img-sec{
+  display: inline-block;
+}
+
+.info-container h4 {
+  font-size: .8rem;
+}
+
+.info-container h3 {
+  font-weight: 600;
+  text-transform: uppercase
+}
+
+.current-price {
+  color: red;
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+.full-price {
+  font-size: .8rem;
+  text-decoration: line-through;
+}
+
+/* FOOTER */
+.footer-main{
+  background-color: #1A1A1A;
+  border-bottom: 2px solid white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  line-height: 1.6rem;
+  font-size: .8rem;
+}
+
+.footer-left {
+  text-align: end;
+}
+
+div .footer-privasy ul li:nth-child(2) a {
+  padding: 0 5px;
+}
